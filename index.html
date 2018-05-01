@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <title>Watching ISS</title>
+    <link rel='stylesheet' href='css/styles.css'>
+</head>
+
+<body>
+    <section class='ISS-info'>
+        <div id='location'>
+            <b>ISS is now located at:</b>
+            <br> longitude: 0, latitude: 0
+        </div>
+        <div id='current-time'>
+            <b>Current UTC time: 18:40</b>
+            <br> Tuesday, 17 Apr, 2018
+        </div>
+    </section>
+    <section class='map-and-people'>
+        <div id="map"></div>
+        <div class='people-container'>
+            <div class='people-info'>
+            </div>
+            <div id='total-amount'>
+                Total amount: 6 people in ISS
+            </div>
+            <div style='display:none' class='people-info-item'>
+                <img src='img/profile.png' alt=''>
+                <div>somename</div>
+            </div>
+    </section>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDtNgxmeR2Rp1u8PHhqdtUqmWRvLddT8s8&callback=initMap">
+    </script>
+    <script src='js/main-script.js'></script>
+</body>
+
+</html>
